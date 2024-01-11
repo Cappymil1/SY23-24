@@ -37,6 +37,7 @@ Partial Class Form1
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -67,7 +68,7 @@ Partial Class Form1
         'SaveToolStripMenuItem
         '
         Me.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
-        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(121, 26)
+        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.SaveToolStripMenuItem.Text = "save"
         '
         'PictureBox1
@@ -158,6 +159,10 @@ Partial Class Form1
         Me.TextBox5.Size = New System.Drawing.Size(125, 27)
         Me.TextBox5.TabIndex = 11
         '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
@@ -201,4 +206,5 @@ Partial Class Form1
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents TextBox4 As TextBox
     Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents OpenFileDialog1 As OpenFileDialog
 End Class
