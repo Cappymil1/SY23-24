@@ -27,16 +27,16 @@ Partial Class Form1
         Me.NewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SaveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Field1 = New System.Windows.Forms.Label()
-        Me.Field2 = New System.Windows.Forms.Label()
-        Me.Field3 = New System.Windows.Forms.Label()
-        Me.Field4 = New System.Windows.Forms.Label()
-        Me.Field5 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Field1 = New System.Windows.Forms.TextBox()
+        Me.Field2 = New System.Windows.Forms.TextBox()
+        Me.Field3 = New System.Windows.Forms.TextBox()
+        Me.Field4 = New System.Windows.Forms.TextBox()
+        Me.Field5 = New System.Windows.Forms.TextBox()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -62,102 +62,104 @@ Partial Class Form1
         'NewToolStripMenuItem
         '
         Me.NewToolStripMenuItem.Name = "NewToolStripMenuItem"
-        Me.NewToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.NewToolStripMenuItem.Size = New System.Drawing.Size(121, 26)
         Me.NewToolStripMenuItem.Text = "new"
         '
         'SaveToolStripMenuItem
         '
         Me.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
-        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(121, 26)
         Me.SaveToolStripMenuItem.Text = "save"
         '
         'PictureBox1
         '
+        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.No
         Me.PictureBox1.Location = New System.Drawing.Point(309, 12)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(239, 197)
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(309, 233)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(49, 20)
+        Me.Label1.TabIndex = 2
+        Me.Label1.Text = "Name"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(309, 290)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(54, 20)
+        Me.Label2.TabIndex = 3
+        Me.Label2.Text = "Height"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(321, 349)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(33, 20)
+        Me.Label3.TabIndex = 4
+        Me.Label3.Text = "Use"
+        '
+        'label4
+        '
+        Me.label4.AutoSize = True
+        Me.label4.Location = New System.Drawing.Point(292, 395)
+        Me.label4.Name = "label4"
+        Me.label4.Size = New System.Drawing.Size(88, 20)
+        Me.label4.TabIndex = 5
+        Me.label4.Text = "Place of use"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(309, 463)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(48, 20)
+        Me.Label5.TabIndex = 6
+        Me.Label5.Text = "Game"
+        '
         'Field1
         '
-        Me.Field1.AutoSize = True
-        Me.Field1.Location = New System.Drawing.Point(309, 233)
+        Me.Field1.Location = New System.Drawing.Point(386, 233)
         Me.Field1.Name = "Field1"
-        Me.Field1.Size = New System.Drawing.Size(49, 20)
-        Me.Field1.TabIndex = 2
-        Me.Field1.Text = "Name"
+        Me.Field1.Size = New System.Drawing.Size(125, 27)
+        Me.Field1.TabIndex = 7
         '
         'Field2
         '
-        Me.Field2.AutoSize = True
-        Me.Field2.Location = New System.Drawing.Point(309, 290)
+        Me.Field2.Location = New System.Drawing.Point(386, 287)
         Me.Field2.Name = "Field2"
-        Me.Field2.Size = New System.Drawing.Size(54, 20)
-        Me.Field2.TabIndex = 3
-        Me.Field2.Text = "Height"
+        Me.Field2.Size = New System.Drawing.Size(125, 27)
+        Me.Field2.TabIndex = 8
         '
         'Field3
         '
-        Me.Field3.AutoSize = True
-        Me.Field3.Location = New System.Drawing.Point(321, 349)
+        Me.Field3.Location = New System.Drawing.Point(386, 342)
         Me.Field3.Name = "Field3"
-        Me.Field3.Size = New System.Drawing.Size(33, 20)
-        Me.Field3.TabIndex = 4
-        Me.Field3.Text = "Use"
+        Me.Field3.Size = New System.Drawing.Size(125, 27)
+        Me.Field3.TabIndex = 9
         '
         'Field4
         '
-        Me.Field4.AutoSize = True
-        Me.Field4.Location = New System.Drawing.Point(292, 395)
+        Me.Field4.Location = New System.Drawing.Point(386, 392)
         Me.Field4.Name = "Field4"
-        Me.Field4.Size = New System.Drawing.Size(88, 20)
-        Me.Field4.TabIndex = 5
-        Me.Field4.Text = "Place of use"
+        Me.Field4.Size = New System.Drawing.Size(125, 27)
+        Me.Field4.TabIndex = 10
         '
         'Field5
         '
-        Me.Field5.AutoSize = True
-        Me.Field5.Location = New System.Drawing.Point(309, 463)
+        Me.Field5.Location = New System.Drawing.Point(386, 463)
         Me.Field5.Name = "Field5"
-        Me.Field5.Size = New System.Drawing.Size(48, 20)
-        Me.Field5.TabIndex = 6
-        Me.Field5.Text = "Game"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(386, 233)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(125, 27)
-        Me.TextBox1.TabIndex = 7
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(386, 287)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(125, 27)
-        Me.TextBox2.TabIndex = 8
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(386, 342)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(125, 27)
-        Me.TextBox3.TabIndex = 9
-        '
-        'TextBox4
-        '
-        Me.TextBox4.Location = New System.Drawing.Point(386, 392)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(125, 27)
-        Me.TextBox4.TabIndex = 10
-        '
-        'TextBox5
-        '
-        Me.TextBox5.Location = New System.Drawing.Point(386, 463)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(125, 27)
-        Me.TextBox5.TabIndex = 11
+        Me.Field5.Size = New System.Drawing.Size(125, 27)
+        Me.Field5.TabIndex = 11
         '
         'OpenFileDialog1
         '
@@ -168,16 +170,16 @@ Partial Class Form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1097, 515)
-        Me.Controls.Add(Me.TextBox5)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Field5)
         Me.Controls.Add(Me.Field4)
         Me.Controls.Add(Me.Field3)
         Me.Controls.Add(Me.Field2)
         Me.Controls.Add(Me.Field1)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.label4)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
@@ -196,15 +198,15 @@ Partial Class Form1
     Friend WithEvents NewToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents SaveToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Field1 As Label
-    Friend WithEvents Field2 As Label
-    Friend WithEvents Field3 As Label
-    Friend WithEvents Field4 As Label
-    Friend WithEvents Field5 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents label4 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Field1 As TextBox
+    Friend WithEvents Field2 As TextBox
+    Friend WithEvents Field3 As TextBox
+    Friend WithEvents Field4 As TextBox
+    Friend WithEvents Field5 As TextBox
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
 End Class
