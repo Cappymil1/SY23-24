@@ -2,6 +2,9 @@
 
 Public Class Form1
     Dim records(50) As String
+    Dim count As Integer
+    Dim current As Integer
+
     Private Sub NewToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NewToolStripMenuItem.Click
         Field1.Text = ""
         Field2.Text = ""
@@ -34,30 +37,55 @@ Public Class Form1
     Private Sub OpenFileDialog1_FileOk(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles OpenFileDialog1.FileOk
         PictureBox1.Load(OpenFileDialog1.FileName)
     End Sub
-
-
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If IO.File.Exists("data.txt") Then
             Dim inFile As New IO.StreamReader("data.txt")
-            records(0) = inFile.ReadLine
+            While Not inFile.EndOfStream
+                records(count) = inFile.ReadLine
+                count = count + 1
+            End While
             inFile.Close()
             showrecord(0)
         End If
-
     End Sub
     Public Sub showrecord(index As Integer)
         Dim Fields() As String
-        Fields = records(index).Split("|")
-        Field1.Text = Fields(0)
-        Field2.Text = Fields(1)
-        Field3.Text = Fields(2)
-        Field4.Text = Fields(3)
-        Field5.Text = Fields(4)
-        If File.Exists(Fields(5)) Then
-            PictureBox1.Load(Fields(5))
-
+        If records(index) <> Nothing Then
+            Fields = records(index).Split("|")
+            Field1.Text = Fields(0)
+            Field2.Text = Fields(1)
+            Field3.Text = Fields(2)
+            Field4.Text = Fields(3)
+            Field5.Text = Fields(4)
+            If File.Exists(Fields(5)) Then
+                PictureBox1.Load(Fields(5))
+            End If
         End If
 
+    End Sub
+
+    Private Sub FirstButton_Click(sender As Object, e As EventArgs) Handles FirstButton.Click
+        current = 0
+        showrecord(current)
+    End Sub
+
+    Private Sub LastButton_Click(sender As Object, e As EventArgs) Handles LastButton.Click
+        current = count - 1
+        showrecord(current)
+    End Sub
+
+    Private Sub previousButton_Click(sender As Object, e As EventArgs) Handles previousButton.Click
+        If current > 0 Then
+            current = current - 1
+            showrecord(current)
+        End If
+    End Sub
+
+    Private Sub NextButton_Click(sender As Object, e As EventArgs) Handles NextButton.Click
+        If current < count - 1 Then
+            current = current + 1
+            showrecord(current)
+        End If
     End Sub
 End Class
 
