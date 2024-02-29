@@ -89,7 +89,7 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(309, 233)
+        Me.Label1.Location = New System.Drawing.Point(288, 233)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(49, 20)
         Me.Label1.TabIndex = 2
@@ -98,7 +98,7 @@ Partial Class Form1
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(309, 290)
+        Me.Label2.Location = New System.Drawing.Point(288, 290)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(54, 20)
         Me.Label2.TabIndex = 3
@@ -107,7 +107,7 @@ Partial Class Form1
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(321, 349)
+        Me.Label3.Location = New System.Drawing.Point(300, 349)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(33, 20)
         Me.Label3.TabIndex = 4
@@ -116,7 +116,7 @@ Partial Class Form1
         'label4
         '
         Me.label4.AutoSize = True
-        Me.label4.Location = New System.Drawing.Point(292, 395)
+        Me.label4.Location = New System.Drawing.Point(271, 395)
         Me.label4.Name = "label4"
         Me.label4.Size = New System.Drawing.Size(88, 20)
         Me.label4.TabIndex = 5
@@ -125,7 +125,7 @@ Partial Class Form1
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(309, 463)
+        Me.Label5.Location = New System.Drawing.Point(288, 463)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(48, 20)
         Me.Label5.TabIndex = 6
@@ -133,37 +133,42 @@ Partial Class Form1
         '
         'Field1
         '
-        Me.Field1.Location = New System.Drawing.Point(386, 233)
+        Me.Field1.Location = New System.Drawing.Point(359, 233)
+        Me.Field1.Multiline = True
         Me.Field1.Name = "Field1"
-        Me.Field1.Size = New System.Drawing.Size(125, 27)
+        Me.Field1.Size = New System.Drawing.Size(240, 27)
         Me.Field1.TabIndex = 7
         '
         'Field2
         '
-        Me.Field2.Location = New System.Drawing.Point(386, 287)
+        Me.Field2.Location = New System.Drawing.Point(359, 287)
+        Me.Field2.Multiline = True
         Me.Field2.Name = "Field2"
-        Me.Field2.Size = New System.Drawing.Size(125, 27)
+        Me.Field2.Size = New System.Drawing.Size(240, 27)
         Me.Field2.TabIndex = 8
         '
         'Field3
         '
-        Me.Field3.Location = New System.Drawing.Point(386, 342)
+        Me.Field3.Location = New System.Drawing.Point(359, 320)
+        Me.Field3.Multiline = True
         Me.Field3.Name = "Field3"
-        Me.Field3.Size = New System.Drawing.Size(125, 27)
+        Me.Field3.Size = New System.Drawing.Size(254, 66)
         Me.Field3.TabIndex = 9
         '
         'Field4
         '
-        Me.Field4.Location = New System.Drawing.Point(386, 392)
+        Me.Field4.Location = New System.Drawing.Point(359, 392)
+        Me.Field4.Multiline = True
         Me.Field4.Name = "Field4"
-        Me.Field4.Size = New System.Drawing.Size(125, 27)
+        Me.Field4.Size = New System.Drawing.Size(240, 27)
         Me.Field4.TabIndex = 10
         '
         'Field5
         '
-        Me.Field5.Location = New System.Drawing.Point(386, 463)
+        Me.Field5.Location = New System.Drawing.Point(359, 463)
+        Me.Field5.Multiline = True
         Me.Field5.Name = "Field5"
-        Me.Field5.Size = New System.Drawing.Size(125, 27)
+        Me.Field5.Size = New System.Drawing.Size(240, 27)
         Me.Field5.TabIndex = 11
         '
         'OpenFileDialog1
