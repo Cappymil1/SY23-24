@@ -58,6 +58,18 @@
                         Tmrgravity.Stop()
                     End If
                 End If
+                If b.Tag = "restart" Then
+                    If Picplayer.Bounds.IntersectsWith(b.Bounds) Then
+                        Picplayer.Location = New Point(12, 288)
+                        Tmrgravity.Stop()
+                    End If
+                End If
+                If b.Tag = "collectable" Then
+                    If Picplayer.Bounds.IntersectsWith(b.Bounds) Then
+                        b.Visible = False
+
+                    End If
+                End If
             End If
         Next
 

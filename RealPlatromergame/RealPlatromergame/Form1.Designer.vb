@@ -37,6 +37,11 @@ Partial Class Frm2dplatformer
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
         CType(Me.Picplayer, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Picair, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Picground, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -46,6 +51,11 @@ Partial Class Frm2dplatformer
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Tmrright
@@ -62,8 +72,7 @@ Partial Class Frm2dplatformer
         '
         'Picplayer
         '
-        Me.Picplayer.Image = Global.RealPlatromergame.My.Resources.Resources.bruh
-        Me.Picplayer.Location = New System.Drawing.Point(12, 346)
+        Me.Picplayer.Location = New System.Drawing.Point(12, 288)
         Me.Picplayer.Name = "Picplayer"
         Me.Picplayer.Size = New System.Drawing.Size(55, 52)
         Me.Picplayer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -84,7 +93,7 @@ Partial Class Frm2dplatformer
         Me.Picground.Image = Global.RealPlatromergame.My.Resources.Resources.em_the_therapist
         Me.Picground.Location = New System.Drawing.Point(-9, 404)
         Me.Picground.Name = "Picground"
-        Me.Picground.Size = New System.Drawing.Size(968, 62)
+        Me.Picground.Size = New System.Drawing.Size(1329, 61)
         Me.Picground.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Picground.TabIndex = 1
         Me.Picground.TabStop = False
@@ -114,7 +123,7 @@ Partial Class Frm2dplatformer
         'PictureBox3
         '
         Me.PictureBox3.Image = Global.RealPlatromergame.My.Resources.Resources.vectored
-        Me.PictureBox3.Location = New System.Drawing.Point(804, 48)
+        Me.PictureBox3.Location = New System.Drawing.Point(903, 171)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(100, 17)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -125,7 +134,7 @@ Partial Class Frm2dplatformer
         'PictureBox4
         '
         Me.PictureBox4.Image = Global.RealPlatromergame.My.Resources.Resources.vectored
-        Me.PictureBox4.Location = New System.Drawing.Point(85, 31)
+        Me.PictureBox4.Location = New System.Drawing.Point(774, 256)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(100, 17)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -155,13 +164,75 @@ Partial Class Frm2dplatformer
         Me.PictureBox6.TabStop = False
         Me.PictureBox6.Tag = "bound"
         '
+        'PictureBox7
+        '
+        Me.PictureBox7.Image = Global.RealPlatromergame.My.Resources.Resources._8btkg8
+        Me.PictureBox7.Location = New System.Drawing.Point(798, 200)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(41, 50)
+        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox7.TabIndex = 9
+        Me.PictureBox7.TabStop = False
+        Me.PictureBox7.Tag = "restart"
+        '
+        'PictureBox8
+        '
+        Me.PictureBox8.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.PictureBox8.Image = Global.RealPlatromergame.My.Resources.Resources.slip
+        Me.PictureBox8.Location = New System.Drawing.Point(376, 160)
+        Me.PictureBox8.Name = "PictureBox8"
+        Me.PictureBox8.Size = New System.Drawing.Size(49, 50)
+        Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox8.TabIndex = 10
+        Me.PictureBox8.TabStop = False
+        Me.PictureBox8.Tag = "collectable"
+        '
+        'PictureBox9
+        '
+        Me.PictureBox9.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.PictureBox9.Image = Global.RealPlatromergame.My.Resources.Resources.slip
+        Me.PictureBox9.Location = New System.Drawing.Point(85, 104)
+        Me.PictureBox9.Name = "PictureBox9"
+        Me.PictureBox9.Size = New System.Drawing.Size(49, 50)
+        Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox9.TabIndex = 11
+        Me.PictureBox9.TabStop = False
+        Me.PictureBox9.Tag = "collectable"
+        '
+        'PictureBox10
+        '
+        Me.PictureBox10.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.PictureBox10.Image = Global.RealPlatromergame.My.Resources.Resources.slip
+        Me.PictureBox10.Location = New System.Drawing.Point(626, 66)
+        Me.PictureBox10.Name = "PictureBox10"
+        Me.PictureBox10.Size = New System.Drawing.Size(49, 50)
+        Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox10.TabIndex = 12
+        Me.PictureBox10.TabStop = False
+        Me.PictureBox10.Tag = "collectable"
+        '
+        'PictureBox11
+        '
+        Me.PictureBox11.Image = Global.RealPlatromergame.My.Resources.Resources.em_the_therapist
+        Me.PictureBox11.Location = New System.Drawing.Point(-9, 685)
+        Me.PictureBox11.Name = "PictureBox11"
+        Me.PictureBox11.Size = New System.Drawing.Size(1329, 61)
+        Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox11.TabIndex = 13
+        Me.PictureBox11.TabStop = False
+        '
         'Frm2dplatformer
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.RealPlatromergame.My.Resources.Resources.casino
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(956, 501)
+        Me.ClientSize = New System.Drawing.Size(1312, 715)
+        Me.Controls.Add(Me.PictureBox11)
+        Me.Controls.Add(Me.PictureBox10)
+        Me.Controls.Add(Me.PictureBox9)
+        Me.Controls.Add(Me.PictureBox8)
+        Me.Controls.Add(Me.PictureBox7)
         Me.Controls.Add(Me.PictureBox6)
         Me.Controls.Add(Me.PictureBox5)
         Me.Controls.Add(Me.PictureBox4)
@@ -183,6 +254,11 @@ Partial Class Frm2dplatformer
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -201,4 +277,9 @@ Partial Class Frm2dplatformer
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents PictureBox6 As PictureBox
+    Friend WithEvents PictureBox7 As PictureBox
+    Friend WithEvents PictureBox8 As PictureBox
+    Friend WithEvents PictureBox9 As PictureBox
+    Friend WithEvents PictureBox10 As PictureBox
+    Friend WithEvents PictureBox11 As PictureBox
 End Class
