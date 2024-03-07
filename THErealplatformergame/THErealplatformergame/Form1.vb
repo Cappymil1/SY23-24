@@ -1,10 +1,12 @@
 ﻿Public Class Form1
     Dim moveSpeed As Integer = 15
     Dim isJumping As Boolean
-    Dim count As Integer
+    Dim score As Integer = 0
 
 
-    Private Sub frm2DPlatformer_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles Me.KeyDown
+
+
+    Private Sub frm2DPlatformer_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles TextBox1.KeyDown
         Select Case e.KeyCode
             Case Keys.Right
                 Tmrright.Start()
@@ -20,7 +22,7 @@
         Picplayer.Left += moveSpeed
     End Sub
 
-    Private Sub frm2DPlatformer_KeyUp(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles Me.KeyUp
+    Private Sub frm2DPlatformer_KeyUp(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles TextBox1.KeyUp
         Select Case e.KeyCode
             Case Keys.Right
                 Tmrright.Stop()
@@ -64,12 +66,25 @@
                     If Picplayer.Bounds.IntersectsWith(b.Bounds) Then
                         Picplayer.Location = New Point(12, 288)
                         Tmrgravity.Stop()
+                        If score > 0 Then
+                            score -= 1
+                        End If
+                        scoretextbox.Text = score
                     End If
                 End If
                 If b.Tag = "collectable" Then
-                    If Picplayer.Bounds.IntersectsWith(b.Bounds) Then
+                    If b.Visible And Picplayer.Bounds.IntersectsWith(b.Bounds) Then
                         b.Visible = False
-                        count = count + 1
+                        score += 1
+                        scoreTextBox.Text = score
+                    End If
+                End If
+                If b.Tag = "end" Then
+                    If score >= 4 Then
+                        b.Visible = True
+                    End If
+                    If b.Visible And Picplayer.Bounds.IntersectsWith(b.Bounds) Then
+                        Me.Close()
                     End If
                 End If
             End If
@@ -81,7 +96,6 @@
         Picplayer.Top += moveSpeed
     End Sub
 
-    Private Sub Tmrcount_Tick(sender As Object, e As EventArgs) Handles Tmrcount.Tick
-        TextBox1.Text = count
-    End Sub
+
+
 End Class
