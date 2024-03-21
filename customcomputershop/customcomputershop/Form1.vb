@@ -1,18 +1,20 @@
 ﻿Public Class Form1
     Dim casecost As Decimal
-
-    Private Sub caseoption1_Click(sender As Object, e As EventArgs) Handles caseoption1.Click
-        Dim c1 As Integer
-
-        case1labelamount.Text = c1 + 1
-
-
-        casecost = casecost + 350
-        Label2.Text = casecost.ToString("c2")
-    End Sub
+    Dim c1 As Boolean = False
 
     Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
-        casecost = casecost + 350
-        Label2.Text = casecost.ToString("c2")
+
+        If c1 = False Then
+            casecost = casecost + 350
+            Label2.Text = casecost.ToString("c2")
+            c1 = True
+            case1labelamount.Text = case1labelamount.Text + 1
+        Else
+            casecost = casecost - 350
+            Label2.Text = casecost.ToString("c2")
+            c1 = False
+            case1labelamount.Text = case1labelamount.Text - 1
+        End If
+
     End Sub
 End Class
