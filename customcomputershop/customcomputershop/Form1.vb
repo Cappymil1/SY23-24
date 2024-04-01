@@ -14,7 +14,10 @@
     Dim p1 As Boolean = False
     Dim p2 As Boolean = False
     Dim p3 As Boolean = False
-    Dim p4 As Boolean = False
+    Dim R1 As Boolean = False
+    Dim R2 As Boolean = False
+    Dim R3 As Boolean = False
+
     Dim totalcost As Decimal
 
     Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
@@ -224,6 +227,38 @@
             End If
             Label2.Text = totalcost.ToString("c2")
             GC3 = False
+
+        End If
+    End Sub
+
+    Private Sub CheckBox18_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox18.CheckedChanged
+        If R1 = False Then
+            totalcost = totalcost + 360
+            Label2.Text = totalcost.ToString("c2")
+            R1 = True
+
+        Else
+            If totalcost > 0 Then
+                totalcost = totalcost - 360
+            End If
+            Label2.Text = totalcost.ToString("c2")
+            R1 = False
+
+        End If
+    End Sub
+
+    Private Sub CheckBox17_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox17.CheckedChanged
+        If R2 = False Then
+            totalcost = totalcost + 270
+            Label2.Text = totalcost.ToString("c2")
+            R2 = True
+
+        Else
+            If totalcost > 0 Then
+                totalcost = totalcost - 270
+            End If
+            Label2.Text = totalcost.ToString("c2")
+            R2 = False
 
         End If
     End Sub
