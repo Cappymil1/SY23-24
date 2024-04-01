@@ -34,16 +34,23 @@ Partial Class Form1
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Totalcosttimer = New System.Windows.Forms.Timer(Me.components)
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.CheckBox10 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox11 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox12 = New System.Windows.Forms.CheckBox()
         Me.CheckBox9 = New System.Windows.Forms.CheckBox()
         Me.CheckBox5 = New System.Windows.Forms.CheckBox()
         Me.CheckBox4 = New System.Windows.Forms.CheckBox()
         Me.CLEARButton = New System.Windows.Forms.Button()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.CheckBox10 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox11 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox12 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox13 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox14 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox15 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox16 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox17 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox18 = New System.Windows.Forms.CheckBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
+        Me.GroupBox3.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
@@ -160,6 +167,36 @@ Partial Class Form1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Motherboard and Graphics card"
         '
+        'CheckBox10
+        '
+        Me.CheckBox10.AutoSize = True
+        Me.CheckBox10.Location = New System.Drawing.Point(118, 129)
+        Me.CheckBox10.Name = "CheckBox10"
+        Me.CheckBox10.Size = New System.Drawing.Size(59, 20)
+        Me.CheckBox10.TabIndex = 8
+        Me.CheckBox10.Text = "GDD"
+        Me.CheckBox10.UseVisualStyleBackColor = True
+        '
+        'CheckBox11
+        '
+        Me.CheckBox11.AutoSize = True
+        Me.CheckBox11.Location = New System.Drawing.Point(118, 86)
+        Me.CheckBox11.Name = "CheckBox11"
+        Me.CheckBox11.Size = New System.Drawing.Size(56, 20)
+        Me.CheckBox11.TabIndex = 7
+        Me.CheckBox11.Text = "Pcle"
+        Me.CheckBox11.UseVisualStyleBackColor = True
+        '
+        'CheckBox12
+        '
+        Me.CheckBox12.AutoSize = True
+        Me.CheckBox12.Location = New System.Drawing.Point(118, 41)
+        Me.CheckBox12.Name = "CheckBox12"
+        Me.CheckBox12.Size = New System.Drawing.Size(61, 20)
+        Me.CheckBox12.TabIndex = 6
+        Me.CheckBox12.Text = "XLR8"
+        Me.CheckBox12.UseVisualStyleBackColor = True
+        '
         'CheckBox9
         '
         Me.CheckBox9.AutoSize = True
@@ -201,6 +238,12 @@ Partial Class Form1
         '
         'GroupBox3
         '
+        Me.GroupBox3.Controls.Add(Me.CheckBox13)
+        Me.GroupBox3.Controls.Add(Me.CheckBox14)
+        Me.GroupBox3.Controls.Add(Me.CheckBox15)
+        Me.GroupBox3.Controls.Add(Me.CheckBox16)
+        Me.GroupBox3.Controls.Add(Me.CheckBox17)
+        Me.GroupBox3.Controls.Add(Me.CheckBox18)
         Me.GroupBox3.Location = New System.Drawing.Point(547, 28)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(219, 209)
@@ -208,35 +251,65 @@ Partial Class Form1
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "RAM and power sup"
         '
-        'CheckBox10
+        'CheckBox13
         '
-        Me.CheckBox10.AutoSize = True
-        Me.CheckBox10.Location = New System.Drawing.Point(118, 129)
-        Me.CheckBox10.Name = "CheckBox10"
-        Me.CheckBox10.Size = New System.Drawing.Size(59, 20)
-        Me.CheckBox10.TabIndex = 8
-        Me.CheckBox10.Text = "GDD"
-        Me.CheckBox10.UseVisualStyleBackColor = True
+        Me.CheckBox13.AutoSize = True
+        Me.CheckBox13.Location = New System.Drawing.Point(125, 138)
+        Me.CheckBox13.Name = "CheckBox13"
+        Me.CheckBox13.Size = New System.Drawing.Size(59, 20)
+        Me.CheckBox13.TabIndex = 14
+        Me.CheckBox13.Text = "GDD"
+        Me.CheckBox13.UseVisualStyleBackColor = True
         '
-        'CheckBox11
+        'CheckBox14
         '
-        Me.CheckBox11.AutoSize = True
-        Me.CheckBox11.Location = New System.Drawing.Point(118, 86)
-        Me.CheckBox11.Name = "CheckBox11"
-        Me.CheckBox11.Size = New System.Drawing.Size(56, 20)
-        Me.CheckBox11.TabIndex = 7
-        Me.CheckBox11.Text = "Pcle"
-        Me.CheckBox11.UseVisualStyleBackColor = True
+        Me.CheckBox14.AutoSize = True
+        Me.CheckBox14.Location = New System.Drawing.Point(125, 95)
+        Me.CheckBox14.Name = "CheckBox14"
+        Me.CheckBox14.Size = New System.Drawing.Size(56, 20)
+        Me.CheckBox14.TabIndex = 13
+        Me.CheckBox14.Text = "Pcle"
+        Me.CheckBox14.UseVisualStyleBackColor = True
         '
-        'CheckBox12
+        'CheckBox15
         '
-        Me.CheckBox12.AutoSize = True
-        Me.CheckBox12.Location = New System.Drawing.Point(118, 41)
-        Me.CheckBox12.Name = "CheckBox12"
-        Me.CheckBox12.Size = New System.Drawing.Size(61, 20)
-        Me.CheckBox12.TabIndex = 6
-        Me.CheckBox12.Text = "XLR8"
-        Me.CheckBox12.UseVisualStyleBackColor = True
+        Me.CheckBox15.AutoSize = True
+        Me.CheckBox15.Location = New System.Drawing.Point(125, 50)
+        Me.CheckBox15.Name = "CheckBox15"
+        Me.CheckBox15.Size = New System.Drawing.Size(61, 20)
+        Me.CheckBox15.TabIndex = 12
+        Me.CheckBox15.Text = "XLR8"
+        Me.CheckBox15.UseVisualStyleBackColor = True
+        '
+        'CheckBox16
+        '
+        Me.CheckBox16.AutoSize = True
+        Me.CheckBox16.Location = New System.Drawing.Point(32, 138)
+        Me.CheckBox16.Name = "CheckBox16"
+        Me.CheckBox16.Size = New System.Drawing.Size(87, 20)
+        Me.CheckBox16.TabIndex = 11
+        Me.CheckBox16.Text = "CTCW (2)"
+        Me.CheckBox16.UseVisualStyleBackColor = True
+        '
+        'CheckBox17
+        '
+        Me.CheckBox17.AutoSize = True
+        Me.CheckBox17.Location = New System.Drawing.Point(32, 95)
+        Me.CheckBox17.Name = "CheckBox17"
+        Me.CheckBox17.Size = New System.Drawing.Size(80, 20)
+        Me.CheckBox17.TabIndex = 10
+        Me.CheckBox17.Text = "F5-78 (2)"
+        Me.CheckBox17.UseVisualStyleBackColor = True
+        '
+        'CheckBox18
+        '
+        Me.CheckBox18.AutoSize = True
+        Me.CheckBox18.Location = New System.Drawing.Point(32, 50)
+        Me.CheckBox18.Name = "CheckBox18"
+        Me.CheckBox18.Size = New System.Drawing.Size(80, 20)
+        Me.CheckBox18.TabIndex = 9
+        Me.CheckBox18.Text = "FF3D (2)"
+        Me.CheckBox18.UseVisualStyleBackColor = True
         '
         'Form1
         '
@@ -255,6 +328,8 @@ Partial Class Form1
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
+        Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox3.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -279,4 +354,10 @@ Partial Class Form1
     Friend WithEvents CheckBox10 As CheckBox
     Friend WithEvents CheckBox11 As CheckBox
     Friend WithEvents CheckBox12 As CheckBox
+    Friend WithEvents CheckBox13 As CheckBox
+    Friend WithEvents CheckBox14 As CheckBox
+    Friend WithEvents CheckBox15 As CheckBox
+    Friend WithEvents CheckBox16 As CheckBox
+    Friend WithEvents CheckBox17 As CheckBox
+    Friend WithEvents CheckBox18 As CheckBox
 End Class
