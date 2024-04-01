@@ -22,7 +22,6 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.CheckBox6 = New System.Windows.Forms.CheckBox()
         Me.CheckBox3 = New System.Windows.Forms.CheckBox()
@@ -32,7 +31,6 @@ Partial Class Form1
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Totalcosttimer = New System.Windows.Forms.Timer(Me.components)
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.CheckBox10 = New System.Windows.Forms.CheckBox()
         Me.CheckBox11 = New System.Windows.Forms.CheckBox()
@@ -48,6 +46,7 @@ Partial Class Form1
         Me.CheckBox16 = New System.Windows.Forms.CheckBox()
         Me.CheckBox17 = New System.Windows.Forms.CheckBox()
         Me.CheckBox18 = New System.Windows.Forms.CheckBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -147,10 +146,6 @@ Partial Class Form1
         Me.Label2.Size = New System.Drawing.Size(86, 32)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "$0.00"
-        '
-        'Totalcosttimer
-        '
-        Me.Totalcosttimer.Interval = 1
         '
         'GroupBox2
         '
@@ -256,9 +251,9 @@ Partial Class Form1
         Me.CheckBox13.AutoSize = True
         Me.CheckBox13.Location = New System.Drawing.Point(125, 138)
         Me.CheckBox13.Name = "CheckBox13"
-        Me.CheckBox13.Size = New System.Drawing.Size(59, 20)
+        Me.CheckBox13.Size = New System.Drawing.Size(58, 20)
         Me.CheckBox13.TabIndex = 14
-        Me.CheckBox13.Text = "GDD"
+        Me.CheckBox13.Text = "RMX"
         Me.CheckBox13.UseVisualStyleBackColor = True
         '
         'CheckBox14
@@ -266,9 +261,9 @@ Partial Class Form1
         Me.CheckBox14.AutoSize = True
         Me.CheckBox14.Location = New System.Drawing.Point(125, 95)
         Me.CheckBox14.Name = "CheckBox14"
-        Me.CheckBox14.Size = New System.Drawing.Size(56, 20)
+        Me.CheckBox14.Size = New System.Drawing.Size(54, 20)
         Me.CheckBox14.TabIndex = 13
-        Me.CheckBox14.Text = "Pcle"
+        Me.CheckBox14.Text = "GX1"
         Me.CheckBox14.UseVisualStyleBackColor = True
         '
         'CheckBox15
@@ -276,9 +271,9 @@ Partial Class Form1
         Me.CheckBox15.AutoSize = True
         Me.CheckBox15.Location = New System.Drawing.Point(125, 50)
         Me.CheckBox15.Name = "CheckBox15"
-        Me.CheckBox15.Size = New System.Drawing.Size(61, 20)
+        Me.CheckBox15.Size = New System.Drawing.Size(53, 20)
         Me.CheckBox15.TabIndex = 12
-        Me.CheckBox15.Text = "XLR8"
+        Me.CheckBox15.Text = "PF1"
         Me.CheckBox15.UseVisualStyleBackColor = True
         '
         'CheckBox16
@@ -311,11 +306,21 @@ Partial Class Form1
         Me.CheckBox18.Text = "FF3D (2)"
         Me.CheckBox18.UseVisualStyleBackColor = True
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(414, 346)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(174, 57)
+        Me.Button1.TabIndex = 6
+        Me.Button1.Text = "Checkout"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.CLEARButton)
         Me.Controls.Add(Me.GroupBox2)
@@ -338,7 +343,6 @@ Partial Class Form1
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents Totalcosttimer As Timer
     Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents CheckBox2 As CheckBox
     Friend WithEvents CheckBox3 As CheckBox
@@ -360,4 +364,5 @@ Partial Class Form1
     Friend WithEvents CheckBox16 As CheckBox
     Friend WithEvents CheckBox17 As CheckBox
     Friend WithEvents CheckBox18 As CheckBox
+    Friend WithEvents Button1 As Button
 End Class
