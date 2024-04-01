@@ -22,9 +22,95 @@ Partial Class Form2
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.totalaftertax = New System.Windows.Forms.Label()
+        Me.costlabel = New System.Windows.Forms.Label()
+        Me.SuspendLayout()
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(13, 9)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(375, 91)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Checkout"
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(91, 319)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(169, 97)
+        Me.Button1.TabIndex = 1
+        Me.Button1.Text = "Place order "
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(12, 211)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(117, 16)
+        Me.Label2.TabIndex = 2
+        Me.Label2.Tag = "Final cost Aftertax"
+        Me.Label2.Text = "Final cost After tax:"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(12, 140)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(99, 16)
+        Me.Label3.TabIndex = 3
+        Me.Label3.Tag = "Final cost Aftertax"
+        Me.Label3.Text = "Cost before tax:"
+        '
+        'totalaftertax
+        '
+        Me.totalaftertax.AutoSize = True
+        Me.totalaftertax.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.totalaftertax.Location = New System.Drawing.Point(160, 211)
+        Me.totalaftertax.Name = "totalaftertax"
+        Me.totalaftertax.Size = New System.Drawing.Size(70, 32)
+        Me.totalaftertax.TabIndex = 4
+        Me.totalaftertax.Text = "0.00"
+        '
+        'costlabel
+        '
+        Me.costlabel.AutoSize = True
+        Me.costlabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.costlabel.Location = New System.Drawing.Point(160, 127)
+        Me.costlabel.Name = "costlabel"
+        Me.costlabel.Size = New System.Drawing.Size(70, 32)
+        Me.costlabel.TabIndex = 5
+        Me.costlabel.Text = "0.00"
+        '
+        'Form2
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(531, 450)
+        Me.Controls.Add(Me.costlabel)
+        Me.Controls.Add(Me.totalaftertax)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Label1)
+        Me.Name = "Form2"
         Me.Text = "Form2"
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
     End Sub
+
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents totalaftertax As Label
+    Friend WithEvents costlabel As Label
 End Class

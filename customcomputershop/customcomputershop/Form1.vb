@@ -23,7 +23,7 @@
     Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
 
         If c1 = False Then
-            totalcost = totalcost + 124.99
+            Module1.totalcost = Module1.totalcost + 124.99
             Label2.Text = totalcost.ToString("c2")
             c1 = True
 
@@ -331,7 +331,7 @@
         Me.Hide()
         Dim f2 As New Form2
         f2.ShowDialog()
-        Label2.Text = f2.tiresCount.Value
+        Label2.Text = totalcost
         Me.Show()
 
     End Sub
