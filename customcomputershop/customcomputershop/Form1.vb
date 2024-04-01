@@ -1,6 +1,4 @@
 ﻿Public Class Form1
-    Dim casecost As Decimal
-    Dim pcost As Decimal
     Dim c1 As Boolean = False
     Dim c2 As Boolean = False
     Dim c3 As Boolean = False
@@ -17,7 +15,9 @@
     Dim R1 As Boolean = False
     Dim R2 As Boolean = False
     Dim R3 As Boolean = False
-
+    Dim sp1 As Boolean = False
+    Dim sp2 As Boolean = False
+    Dim sp3 As Boolean = False
     Dim totalcost As Decimal
 
     Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
@@ -261,5 +261,78 @@
             R2 = False
 
         End If
+    End Sub
+
+    Private Sub CheckBox16_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox16.CheckedChanged
+        If R3 = False Then
+            totalcost = totalcost + 127
+            Label2.Text = totalcost.ToString("c2")
+            R3 = True
+
+        Else
+            If totalcost > 0 Then
+                totalcost = totalcost - 127
+            End If
+            Label2.Text = totalcost.ToString("c2")
+            R3 = False
+
+        End If
+    End Sub
+
+    Private Sub CheckBox15_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox15.CheckedChanged
+        If sp1 = False Then
+            totalcost = totalcost + 149
+            Label2.Text = totalcost.ToString("c2")
+            sp1 = True
+
+        Else
+            If totalcost > 0 Then
+                totalcost = totalcost - 149
+            End If
+            Label2.Text = totalcost.ToString("c2")
+            sp1 = False
+
+        End If
+    End Sub
+
+    Private Sub CheckBox14_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox14.CheckedChanged
+        If sp2 = False Then
+            totalcost = totalcost + 59
+            Label2.Text = totalcost.ToString("c2")
+            sp2 = True
+
+        Else
+            If totalcost > 0 Then
+                totalcost = totalcost - 59
+            End If
+            Label2.Text = totalcost.ToString("c2")
+            sp2 = False
+
+        End If
+    End Sub
+
+    Private Sub CheckBox13_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox13.CheckedChanged
+        If sp3 = False Then
+            totalcost = totalcost + 249
+            Label2.Text = totalcost.ToString("c2")
+            sp3 = True
+
+        Else
+            If totalcost > 0 Then
+                totalcost = totalcost - 249
+            End If
+            Label2.Text = totalcost.ToString("c2")
+            sp3 = False
+
+        End If
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Me.Hide()
+        Dim f2 As New Form2
+        f2.ShowDialog()
+        Label2.Text = f2.tiresCount.Value
+        Me.Show()
+
     End Sub
 End Class
