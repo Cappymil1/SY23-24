@@ -333,6 +333,6 @@
         f2.ShowDialog()
 
         Me.Show()
-
+        Me.Close()
     End Sub
 End Class
