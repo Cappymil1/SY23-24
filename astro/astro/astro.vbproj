@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>astro</RootNamespace>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="aqua.png" />
+    <None Remove="aries.jpg" />
+    <None Remove="by 5.PNG" />
+    <None Remove="cancer.jpg" />
+    <None Remove="cap.png" />
+    <None Remove="gemini.jpg" />
+    <None Remove="leo.png" />
+    <None Remove="libra.png" />
+    <None Remove="pisces.jpg" />
+    <None Remove="sag.jpg" />
+    <None Remove="scorpio.jpg" />
+    <None Remove="taurus.jpg" />
+    <None Remove="virgo.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Import Include="System.Windows" />
+    <Import Include="System.Windows.Controls" />
+    <Import Include="System.Windows.Data" />
+    <Import Include="System.Windows.Documents" />
+    <Import Include="System.Windows.Input" />
+    <Import Include="System.Windows.Media" />
+    <Import Include="System.Windows.Media.Imaging" />
+    <Import Include="System.Windows.Navigation" />
+    <Import Include="System.Windows.Shapes" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="aqua.png" />
+    <Resource Include="aries.jpg" />
+    <Resource Include="by 5.PNG" />
+    <Resource Include="cancer.jpg" />
+    <Resource Include="cap.png" />
+    <Resource Include="gemini.jpg" />
+    <Resource Include="leo.png" />
+    <Resource Include="libra.png" />
+    <Resource Include="pisces.jpg" />
+    <Resource Include="sag.jpg" />
+    <Resource Include="scorpio.jpg" />
+    <Resource Include="taurus.jpg" />
+    <Resource Include="virgo.jpg" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,74 @@
+﻿<Window x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="label1" Content="card number" HorizontalAlignment="Left" Margin="13,53,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.494,0.654">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="14759.813"/>
+                    <TranslateTransform X="1.85" Y="-0.334"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <TextBox x:Name="ccnum" HorizontalAlignment="Left" Margin="94,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="193"/>
+        <TextBox x:Name="expdate" HorizontalAlignment="Left" Margin="108,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label1_Copy" Content="Expiration date" HorizontalAlignment="Left" Margin="13,86,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.494,0.654">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="14759.813"/>
+                    <TranslateTransform X="1.85" Y="-0.334"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Grid x:Name="clear_button" RenderTransformOrigin="0.198,0.232" Margin="248,22,-248,-22">
+            <TextBox x:Name="cardholdername" HorizontalAlignment="Left" Margin="-138,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="179" RenderTransformOrigin="0.508,0.581"/>
+            <Label x:Name="label1_Copy2" Content="Cardholder name" HorizontalAlignment="Left" Margin="-240,141,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.494,0.654">
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="14759.813"/>
+                        <TranslateTransform X="1.85" Y="-0.334"/>
+                    </TransformGroup>
+                </Label.RenderTransform>
+            </Label>
+            <Button x:Name="paybutton" Content="Button" HorizontalAlignment="Left" Margin="-161,271,0,0" VerticalAlignment="Top" AutomationProperties.HelpText=""/>
+            <Button Content="Button" HorizontalAlignment="Left" Margin="216,173,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
+
+        </Grid>
+        <Label Content="CVV" HorizontalAlignment="Left" Margin="26,126,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="cvvnum" HorizontalAlignment="Left" Margin="82,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="emailtext" HorizontalAlignment="Left" Margin="64,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="179" RenderTransformOrigin="0.508,0.581"/>
+        <Label x:Name="label1_Copy1" Content="Email" HorizontalAlignment="Left" Margin="19,202,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.494,0.654">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="14759.813"/>
+                    <TranslateTransform X="1.85" Y="-0.334"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <TextBox x:Name="phonenum" HorizontalAlignment="Left" Margin="64,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="179" RenderTransformOrigin="0.508,0.581"/>
+        <Label x:Name="label1_Copy3" Content="Phone" HorizontalAlignment="Left" Margin="19,244,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.494,0.654">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="14759.813"/>
+                    <TranslateTransform X="1.85" Y="-0.334"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+
+    </Grid>
+</Window>

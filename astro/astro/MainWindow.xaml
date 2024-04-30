@@ -1,0 +1,28 @@
+﻿<Window x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:astro"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Calendar x:Name="cal1" HorizontalAlignment="Left" Margin="284,150,0,0" VerticalAlignment="Top"/>
+        <Button Content="get sign" HorizontalAlignment="Left" Margin="181,126,0,0" VerticalAlignment="Top" Width="87" Click="Button_Click"/>
+        <Label x:Name="label1" Content="Label" HorizontalAlignment="Left" Margin="206,191,0,0" VerticalAlignment="Top"/>
+        <Image x:Name="ariespic" HorizontalAlignment="Left" Height="100" Margin="86,178,0,0" VerticalAlignment="Top" Width="100" Source="/aries.jpg" Visibility="Collapsed"/>
+        <Image x:Name="tau_pic" HorizontalAlignment="Left" Height="100" Margin="86,178,0,0" VerticalAlignment="Top" Width="100" Source="/taurus.jpg" Visibility="Collapsed"/>
+        <Image x:Name="gempic" HorizontalAlignment="Left" Height="100" Margin="86,178,0,0" VerticalAlignment="Top" Width="100" Source="/gemini.jpg" Visibility="Collapsed"/>
+        <Image x:Name="cancerpic" HorizontalAlignment="Left" Height="100" Margin="86,178,0,0" VerticalAlignment="Top" Width="100" Source="/cancer.jpg" Visibility="Collapsed"/>
+        <Image x:Name="leopic" HorizontalAlignment="Left" Height="100" Margin="86,173,0,0" VerticalAlignment="Top" Width="100" Source="/leo.png" Visibility="Collapsed"/>
+        <Image x:Name="virgopic" HorizontalAlignment="Left" Height="100" Margin="86,173,0,0" VerticalAlignment="Top" Width="100" Source="/virgo.jpg" Visibility="Collapsed"/>
+        <Image x:Name="librapic" HorizontalAlignment="Left" Height="100" Margin="86,178,0,0" VerticalAlignment="Top" Width="100" Source="/libra.png" Visibility="Collapsed"/>
+        <Image x:Name="scorpiopic" HorizontalAlignment="Left" Height="100" Margin="86,184,0,0" VerticalAlignment="Top" Width="100" Source="/scorpio.jpg" Visibility="Collapsed"/>
+        <Image x:Name="cappic" HorizontalAlignment="Left" Height="100" Margin="86,178,0,0" VerticalAlignment="Top" Width="100" Source="/cap.png" Visibility="Collapsed"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="829,217,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="aquapic" HorizontalAlignment="Left" Height="100" Margin="86,184,0,0" VerticalAlignment="Top" Width="100" Source="/aqua.png" Visibility="Collapsed"/>
+        <Image x:Name="piscespic" HorizontalAlignment="Left" Height="100" Margin="86,184,0,0" VerticalAlignment="Top" Width="100" Source="/pisces.jpg" Visibility="Collapsed"/>
+        <Image x:Name="sagpic" HorizontalAlignment="Left" Height="100" Margin="86,184,0,0" VerticalAlignment="Top" Width="100" Source="/sag.jpg" Visibility="Collapsed"/>
+
+    </Grid>
+</Window>

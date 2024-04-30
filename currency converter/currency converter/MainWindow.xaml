@@ -1,0 +1,46 @@
+﻿<Window x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:currency_converter"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="usdollartextbox" HorizontalAlignment="Left" Margin="128,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="convertedtextbox" HorizontalAlignment="Left" Margin="82,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label HorizontalAlignment="Left" Margin="33,77,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="usdlable" Content="US dollar amount" Margin="20,61,672,350"/>
+        <Label x:Name="convertedlabel" Content="converted" Margin="15,104,723,306"/>
+        <Button x:Name="clearbutton" Content="Clear" HorizontalAlignment="Left" Margin="360,73,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="pesos" Content="pesos" HorizontalAlignment="Left" Margin="82,185,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="euro" Content="euro" HorizontalAlignment="Left" Margin="82,157,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="yen" Content="japanese yen" HorizontalAlignment="Left" Margin="82,217,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="pound" Content="pound" HorizontalAlignment="Left" Margin="82,251,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="ad" Content="autralian dollar" HorizontalAlignment="Left" Margin="82,288,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="cd" Content="canadian dollar" HorizontalAlignment="Left" Margin="82,322,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="convertbutton" Content="convert" HorizontalAlignment="Left" Margin="360,108,0,0" VerticalAlignment="Top"/>
+        <Label Content="1 US dollar = .93 euros" HorizontalAlignment="Left" Margin="132,151,0,0" VerticalAlignment="Top"/>
+        <Label Content="1 US dollar =" HorizontalAlignment="Left" Margin="142,180,0,0" VerticalAlignment="Top"/>
+        <Label Content="1 US dollar =" HorizontalAlignment="Left" Margin="188,214,0,0" VerticalAlignment="Top"/>
+        <Label Content="1 US dollar =" HorizontalAlignment="Left" Margin="142,246,0,0" VerticalAlignment="Top"/>
+        <Label Content="1 US dollar =" HorizontalAlignment="Left" Margin="188,285,0,0" VerticalAlignment="Top"/>
+        <Label Content="1 US dollar =" HorizontalAlignment="Left" Margin="188,316,0,0" VerticalAlignment="Top"/>
+        <Image x:Name="europic" HorizontalAlignment="Left" Height="173" Margin="343,157,0,0" VerticalAlignment="Top" Width="219" Source="/europic.png" Visibility="Collapsed"/>
+        <Image x:Name="pesopic" HorizontalAlignment="Left" Height="185" Margin="343,151,0,0" VerticalAlignment="Top" Width="205" Source="/pesopic.jpg" Visibility="Collapsed"/>
+        <Image x:Name="yenpic" HorizontalAlignment="Left" Height="191" Margin="338,133,0,0" VerticalAlignment="Top" Width="208" Source="/yenpic.jpg" Visibility="Collapsed"/>
+        <Image x:Name="cdpic" HorizontalAlignment="Left" Height="191" Margin="343,133,0,0" VerticalAlignment="Top" Width="211" Source="/cd.jpg" Visibility="Collapsed"/>
+        <Image x:Name="adpic" HorizontalAlignment="Left" Height="193" Margin="338,134,0,0" VerticalAlignment="Top" Width="209" RenderTransformOrigin="0.5,0.5" Source="/ad.jpg" Visibility="Collapsed">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.006"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="poundpic" HorizontalAlignment="Left" Height="240" Margin="335,141,0,0" VerticalAlignment="Top" Width="239" Source="/poundpic.jpg" Visibility="Collapsed"/>
+
+    </Grid>
+</Window>
