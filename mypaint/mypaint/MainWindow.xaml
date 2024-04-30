@@ -7,6 +7,16 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Canvas x:Name="drawingcanvas" Margin="153,0,-153,0">
+            <Rectangle Height="434" Stroke="Black" Width="647" HorizontalAlignment="Center" VerticalAlignment="Top" OpacityMask="#FF4B4848" Fill="#FFA7A4A4"/>
+        </Canvas>
+        <Rectangle x:Name="colorrectangle1" HorizontalAlignment="Left" Height="74" Margin="10,0,0,0" Stroke="Black" VerticalAlignment="Top" Width="82" Fill="#FFF71111"/>
+        <Slider x:Name="heightslider" HorizontalAlignment="Left" Margin="10,110,0,0" VerticalAlignment="Top" Width="120" Maximum="50" Minimum="5"/>
+        <Slider x:Name="widthslider" HorizontalAlignment="Left" Margin="10,154,0,0" VerticalAlignment="Top" Width="120" Minimum="5" Maximum="50"/>
+        <Rectangle x:Name="colorrectangle2" HorizontalAlignment="Left" Height="46" Margin="10,217,0,0" Stroke="Black" VerticalAlignment="Top" Width="46" Fill="#FFF4E606"/>
+        <Rectangle x:Name="colorrectangle3" HorizontalAlignment="Left" Height="46" Margin="84,217,0,0" Stroke="Black" VerticalAlignment="Top" Width="46" Fill="#FFF71111"/>
+        <Rectangle x:Name="colorrectangle4" HorizontalAlignment="Left" Height="46" Margin="10,284,0,0" Stroke="Black" VerticalAlignment="Top" Width="46" Fill="#FF063FF4"/>
+        <Rectangle x:Name="colorrectangle5" HorizontalAlignment="Left" Height="46" Margin="84,284,0,0" Stroke="Black" VerticalAlignment="Top" Width="46" Fill="#FF1AF406"/>
+
     </Grid>
 </Window>
