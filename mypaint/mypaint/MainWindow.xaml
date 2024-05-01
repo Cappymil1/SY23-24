@@ -17,6 +17,11 @@
         <Rectangle x:Name="colorrectangle3" HorizontalAlignment="Left" Height="46" Margin="84,217,0,0" Stroke="Black" VerticalAlignment="Top" Width="46" Fill="#FFF71111"/>
         <Rectangle x:Name="colorrectangle4" HorizontalAlignment="Left" Height="46" Margin="10,284,0,0" Stroke="Black" VerticalAlignment="Top" Width="46" Fill="#FF063FF4"/>
         <Rectangle x:Name="colorrectangle5" HorizontalAlignment="Left" Height="46" Margin="84,284,0,0" Stroke="Black" VerticalAlignment="Top" Width="46" Fill="#FF1AF406"/>
+        <Button x:Name="clearbutton" Content="clear" HorizontalAlignment="Left" Margin="107,37,0,0" VerticalAlignment="Top"/>
+        <Button Content="undo" HorizontalAlignment="Left" Margin="107,10,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Button x:Name="elipsebutton" Content="ellipse" HorizontalAlignment="Left" Margin="13,388,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="rectbutton" Content="Rectangle" HorizontalAlignment="Left" Margin="13,350,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="shapelabel" Content="shape label" HorizontalAlignment="Left" Margin="69,370,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
